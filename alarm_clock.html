@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alarm clock</title>
+
+    <link rel="stylesheet" href="alarm_clock.css">
+</head>
+
+<body>
+    <div class="section">
+        <div class="menu">
+            <div class="menuitem" id="menuitem0"><img src="logocss.jpg"></div>
+            <div class="menuitem phone" id="menuitem1"><a>Home</a></div>
+            <div class="menuitem phone" id="menuitem2"><a>Aboutus</a></div>
+            <div class="menuitem phone" id="menuitem3"><a>Help</a></div>
+            <div class="menuitem phone" id="menuitem4"><a>Contact</a></div>
+            <div class="menuitem phone" id="menuitem5"><a>more</a></div>
+            <div class="menuicon">
+            <div class="menuitem" id="menuitem6">
+                <ion-icon name="settings-outline" class="icon"></ion-icon>
+            </div>
+            <div class="menuitem" id="menuitem7">
+                <ion-icon name="contrast-outline" class="icon"></ion-icon>
+            </div>
+            </div>
+    </div>
+    <!-- <div class="container">
+        <div class="box">Alarm Clock</div>
+    </div> -->
+    <form id="myform">
+        <input type="datetime-local" class="formelement" id="f1" name="alarm_time">
+        <input type="text" placeholder="name" class="formelement" id="f2" name="motive">
+        <div id="triggers">
+            <button class="formelement" id="f3">Save</button>
+            <input type="reset" value="Reset" class="formelement" id="f4">
+        </div>
+    </form>
+
+    <div id="clock"></div>
+    <div class="control">
+        <button onclick="play()" id="bt1" class="btn">
+            <ion-icon name="play-outline"></ion-icon>
+        </button>
+        <button onclick="stop(audio)" id="bt2" class="btn">
+            <ion-icon name="power-outline"></ion-icon>
+        </button>
+    </div>
+
+
+</body>
+<script src="alarm_clock.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

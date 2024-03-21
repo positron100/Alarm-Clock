@@ -1,0 +1,230 @@
+body {
+    background: url(https://wallpaperaccess.com/full/2068760.jpg) center bottom/cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .section {
+    margin-top: 20px;
+    padding: 3px;
+    position: relative;
+    top: -10px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.605);
+    height: 70px;
+  }
+  
+  .menu {
+    display: flex;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    height: 54px;
+    width: 100%;
+    font-size: x-large;
+    justify-content: space-between;
+    align-items: center;
+    margin: -10px 0 42px;
+    padding: 15px 0;
+  }
+  
+  .menuitem {
+    margin: 0 35px;
+  }
+  
+  #menuitem6, #menuitem7 {
+    transition: transform 0.7s ease;
+  }
+  
+  #menuitem6:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+  
+  #menuitem7:hover {
+    transform: rotate(180deg) translate(10px);
+    cursor: pointer;
+  }
+  
+  .menu .icon {
+    display: flex;
+    visibility: visible;
+    transform: scale(1.58);
+    color: white;
+  }
+  
+  .menuicon {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+  }
+  
+  .menu img {
+    height: 53px;
+    padding: 0;
+    margin-top: 9px;
+    transform: scale(1.5);
+    mix-blend-mode: color-dodge;
+  }
+  
+  /* .container {
+    display: flex;
+    font-family: 'Black Ops One', cursive;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+    visibility:hidden;
+  } */
+/*   
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 350px;
+    margin-right: 37px;
+    font-size: xx-large;
+    background-color: green;
+    background: url(https://img.freepik.com/premium-photo/mysterious-elegant-wall-clock-generative-ai_888418-11874.jpg) center;
+  }
+  
+  @keyframes animate {
+    from {
+      width: 250px;
+    }
+    to {
+      width: 400px;
+      color: white;
+      border-radius: 400px;
+    }
+  }
+   */
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #myform {
+    display: grid;
+    justify-content: flex-end;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap:40px;
+    margin: 100px 50px 30px 0;
+  }
+  
+  #triggers {
+    display: flex;
+    justify-content: center;
+  }
+
+  .formelement {
+    all: unset;
+    background-color: white;
+    height: 40px;
+    margin: 10px 25px;
+    font-family: poppins, sans-serif;
+    padding: 7px 15px 0 15px;
+    transition: transform 0.3s;
+  }
+  
+  .formelement:hover {
+    background-color:#425e38;
+    color:yellowgreen;
+    transform: scale(1.2);
+  }
+  
+  #f1, #f2 {
+    width: 350px;
+    font-size: x-large;
+  }
+  
+  #f1 {
+    padding-top: 8px;
+    padding-bottom: 0;
+  }
+  
+  #f2 {
+    padding-top: 5px;
+    padding-bottom: 4px;
+  }
+  
+  #trigerrs {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #f3, #f4 {
+    padding-top: 0;
+    padding-left: 55px;
+    padding-right: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: larger;
+    width: 110px;
+  }
+  
+  #f3:hover, #f4:hover {
+    transform: scale(1.2);
+  }
+  /* controls  */
+  .control {
+    margin-top: -200px !important;
+    margin-right: 625px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+  
+  .btn {
+    all: unset;
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    height: 22px;
+    width: 25px;
+    margin: 10px 100px;
+    border-radius: 5px;
+    transform: scale(2.5);
+    cursor: pointer;
+    box-shadow: 1px 2px 5px 2px rgb(8 70 131);
+    transition: all ease 0.5s;
+  }
+  .btn:hover{
+    transform: scale(5);
+    background-color:rgb(8 70 131);
+    color:white;
+  }
+  .btn:hover ion-icon {
+    transform: rotate(180deg);
+    color:white;
+  }
+  
+  ion-icon {
+    color: rgb(8 70 131);
+    padding: 2px 5px;
+    transition: all ease 0.5s;
+  }
+  
+
+
+/* CLOCK */
+#clock{
+  display: inline-block;
+  position: relative;
+  top: -320px;
+  font-size: xx-large;
+  color: white;
+  font-family: poppins,sans-serif;
+  right: -162px;
+  border:2px solid white;
+  padding: 0px 30px;
+  background-color: #425e38;
+  border-radius: 60px;
+  transition: all ease 0.3s;
+}
+
+#clock:hover{
+  background-color: white;
+  border:2px solid #425e38;
+  color:#425e38;
+}
